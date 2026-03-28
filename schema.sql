@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS pages (
     updated_at  DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- keywordsテーブル（TF-IDFスコア保存）
+-- keywordsテーブル（TF-IDFスコア保存）  #Meta data
 -- page_id が削除されたら自動的にキーワードも削除される（ON DELETE CASCADE）
 CREATE TABLE IF NOT EXISTS keywords (
     id          INTEGER PRIMARY KEY AUTOINCREMENT,
